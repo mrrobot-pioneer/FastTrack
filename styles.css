@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+header {
+  padding: 10px 0;
+}
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -664,6 +668,43 @@ footer {
   font-size: 0.9rem;
   color: var(--text-light);
   text-align: center;
+}
+
+/* alert messages */
+/* Base Alert Style */
+.alert {
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  display: none; /* Hidden by default */
+}
+
+.alert.success {
+  background-color: lightgreen;
+  border-color: green;
+  color: green;
+}
+
+/* Error / Danger Alert Styling */
+.alert.error,
+.alert.danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+/* Optional: Additional styling for a close button inside the alert */
+.alert .close-btn {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: inherit;
+  cursor: pointer;
 }
 
 @media (width > 540px) {
